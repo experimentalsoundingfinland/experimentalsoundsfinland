@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'Atkinson Hyperlegible', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.atkinson-hyperlegible-regular {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-bold {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.atkinson-hyperlegible-regular-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.atkinson-hyperlegible-bold-italic {
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Add the color classes */
+.color1 { color: #333333; }
+.color2 { color: #003333; }
+.color3 { color: #330033; }
+.color4 { color: #333300; }
+.color5 { color: #333366; }
+.color6 { color: #006600; }
+.color7 { color: #000066; }
+.color8 { color: #660000; }
+.color9 { color: #330066; }
+.color10 { color: #006633; }
+.color11 { color: #660033; }
+.color12 { color: #002F6C; }
+
+.site-header {
+  border-bottom: 5px solid black;
+  margin-bottom: 15px; /* This is connected with the .page-heading display: none, to give more space below the header */
+}
+
+.site-title, .site-title:visited {
+  color: #111111;
+  font-weight: bold; /* This will make your text bold */
+  letter-spacing: 0px;
+   /* letter-spacing: 1px; /* This will increase the space between your letters */
+  
+}
+
+.site-title, .site-title:visited span {
+  letter-spacing: 0px;  /* This fixes the distance between letters when changed, as the JS creates spans */
+}
+
+.page-heading {
+  display: none;
+}
+
+.page-content {
+  padding: 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight {
+    margin-bottom: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 3px solid black;
+  margin: 1em 0;
+}
+
+.site-footer {
+  border-top: 5px solid black;
+  padding: 15px 0;
+}
+
+#events-list {
+  border: none;
+}
+
+#events-list .spacer {
+    height: 20px;
+}
+
+.event-container {
+  border: 2px solid black;
+}
+
+#events-list .row {
+  display: flex;
+  padding: 0px;
+  background-color: #fff;
+  border: 3px solid black; /* Adjust border thickness here */
+}
+
+#events-list .row > .cell:first-child {
+  outline: 1px solid black;
+  flex: 0 0 30%;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#events-list .row > .cell:last-child {
+  outline: 1px solid black;
+  flex: 1;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+}
+
+#events-list .row:first-child {
+  margin-top: 0;
+}
+
+#events-list .row > .cell:first-child {
+  flex: 0 0 30%;
+}
+
+#events-list .row > .cell:last-child a {
+  display: inline-block;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#events-list .row > .cell:last-child a.url {
+  display: inline-block;
+  max-width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  vertical-align: bottom;
+  width: 100%;
+}
+
+.footer-col-wrapper .footer-col {
+  color: black !important;
+}
+
+@media (max-width: 550px) {
+  #events-list .row {
+    flex-direction: column;
+  }
+  #events-list .row > .cell:first-child,
+  #events-list .row > .cell:last-child {
+    flex: 0 0 100%;
+  }
+} 
+
+/*@media screen and (max-width: 800px) {
+    table {
+        display:block;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar
+    }
+}*/
