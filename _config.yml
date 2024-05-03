@@ -4,7 +4,7 @@ description:
 author:
   name: Libero Mureddu & Andrea Mancianti
 baseurl: ""
-url: experimentalsoundingfinland.github.io
+url: experimentalsoundsfinland.github.io
 remote_theme: jekyll/minima
 header_pages:
   - index.md
